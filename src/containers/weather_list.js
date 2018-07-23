@@ -4,7 +4,11 @@ import { connect } from 'react-redux';
 class WeatherList extends Component {
 
   renderWeather(cityData) {
-
+    return (
+      <tr>
+        <td>{cityData.city.name}</td>
+      </tr>
+    );
   }
 
   render () {
