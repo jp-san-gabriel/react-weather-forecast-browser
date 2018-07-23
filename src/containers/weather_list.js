@@ -20,6 +20,8 @@ export default class WeatherList extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { weather: state.weather };
+// { weather } is equivalent to
+// weather = this.state.weather
+function mapStateToProps({ weather }) {
+  return { weather };
 }
